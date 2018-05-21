@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<title>Strona testowa JavaScript</title>
+</head>
+
+<body>
+Tekst HTML <br><br><br>
+</body>
+
+<script language="javascript" type="text/javascript">
+document.write("Tekst JavaScript <br><br><br>");
+
+function bravo () {
+	alert("Brawo!");
+}
+
+var mainfunction = 
+(function() {
+	var piec=prompt("Wpisz cyfre 5", "Tu powinna byc cyfra 5");
+
+document.write("Twoje wybory: <br>");
+document.write(piec,"<br>");
+
+if (piec!=5) {
+
+	while (piec!=5) {
+	alert("Serio?! Sprobuj ponownie!");
+	var piec=prompt("Wpisz cyfre 5", "Tu powinna byc cyfra 5");
+	document.write(piec, "<br>");
+			}
+bravo();
+		}
+
+else { bravo(); }
+});
+
+mainfunction();
+
+</script>
+
+
+</html>
